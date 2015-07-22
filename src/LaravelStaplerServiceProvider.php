@@ -92,7 +92,7 @@ class LaravelStaplerServiceProvider extends ServiceProvider
         {
             $migrationsFolderPath = app_path() . '/database/migrations';
 
-            return new FastenCommand($app['view'], $app['files'], $migrationsFolderPath);
+            return new Commands\FastenCommand($app['view'], $app['files'], $migrationsFolderPath);
         });
     }
 
